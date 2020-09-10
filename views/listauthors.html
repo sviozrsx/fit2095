@@ -1,0 +1,98 @@
+<html>
+    <head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+<link rel="stylesheet" href="styles.css">
+ 
+<style>
+    #ar {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #ar td, #ar th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #ar tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #ar tr:hover {background-color: rgb(17, 119, 3);}
+    
+    #ar th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+</style>
+    
+<style>
+    a:link, a:visited {
+background-color: #61e9aa;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+body {
+    background-image: url('background.jpg');
+}
+
+a:hover, a:active {
+background-color: rgb(46, 224, 135);
+}
+</style>
+<body>
+    <a href="/addbook">Add Book</a>
+    <a href="/deletebook">Remove Book</a>
+    <a href="/listbooks">List Books</a>
+    <a href="/update">Update</a>
+    <a href="/newauthor">New Author</a>
+    <a href="/listauthors">List Authors</a>
+    <a href="/">Home</a>
+</body>
+    <table id="ar">
+    
+        
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Author ID</th>
+            <th>DOB</th>
+            <th>Address</th>
+            <th>Num. of Books</th>
+            
+        </tr>
+        <% for(let i =0; i<ar.length;i++){ %>
+        <tr>
+            <td><%=(i+1)%></td>
+            <td><%=ar[i].name.firstName%></td>
+            <td><%=ar[i].name.lastName%></td>
+            <td><%=ar[i]._id%></td>
+            <td><%=ar[i].dob%></td>
+            <td><%=ar[i].address.state%></td>
+            <td><%=ar[i].numBooks%></td>
+            
+       
+
+        </tr>
+
+        <%}%>
+    </table>
+</body>
+
+ 
+
+
+
+
+
+</html>

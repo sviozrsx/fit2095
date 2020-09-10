@@ -1,0 +1,37 @@
+<html><body>
+    <style>
+        a:link, a:visited {
+  background-color: #61e9aa;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(46, 224, 135);
+}
+body {
+    background-image: url('background.jpg');
+}
+    </style>
+    <body>
+        <a href="/addbook">Add Book</a>
+        <a href="/deletebook">Remove Book</a>
+        <a href="/listbooks">List Books</a>
+        <a href="/update">Update</a>
+        <a href="/newauthor">New Author</a>
+        <a href="/listauthors">List Authors</a>
+        <a href="/">Home</a>
+    </body>
+    <form action="/updatebookpost" method="post" >
+        
+        ISBN of book you want updated:<input type="number" name="isbnOLD" /><br>
+        Name:<input type="text" name="name" /><br>
+        Author:<input type="text" name="author" /><br>
+        Date of Publication:<input type="date" name="dop" /><br>
+        Summary:<input type="text" name="summary" /><br>
+        <button type="submit">Update</button>
+    </form>
+</body></html>

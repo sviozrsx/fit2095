@@ -1,0 +1,33 @@
+<html>
+    <style>
+        a:link, a:visited {
+  background-color: #61e9aa;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(46, 224, 135);
+}
+body {
+    background-image: url('background.jpg');
+}
+    </style>
+    <body>
+        <a href="/addbook">Add Book</a>
+        <a href="/deletebook">Remove Book</a>
+        <a href="/listbooks">List Books</a>
+        <a href="/update">Update</a>
+        <a href="/newauthor">New Author</a>
+        <a href="/listauthors">List Authors</a>
+        <a href="/">Home</a>
+    </body>
+        <form method="post" action="/deleteBookPost">
+            ISBN: <input type="number" name = "isbn" />
+            <button type="submit">Delete Book</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html><body>
+    <style>
+        a:link, a:visited {
+  background-color: #61e9aa;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(46, 224, 135);
+}
+body {
+    background-image: url('background.jpg');
+}
+    </style>
+    <body>
+        <a href="/addbook">Add Book</a>
+        <a href="/deletebook">Remove Book</a>
+        <a href="/listbooks">List Books</a>
+        <a href="/update">Update</a>
+        <a href="/listauthors">List Authors</a>
+        <a href="/">Home</a>
+    </body>
+    <form action="/newauthorpost" method="post">
+        First Name:<input type="text" name="firstName" /><br>
+        Last Name:<input type="text" name="lastName" /><br>
+        Date of Birth:<input type="date" name="dob" /><br>
+
+        State:<input type="text" name="state" /><br>
+        Suburb:<input type="text" name="suburb" /><br>
+        Street:<input type="text" name="street" /><br>
+        Unit #:<input type="text" name="unit" /><br>
+
+
+
+        Books:<input type="number" name="numBooks" /><br>
+        <button type="submit">Add Book</button>
+    </form>
+</body></html>
